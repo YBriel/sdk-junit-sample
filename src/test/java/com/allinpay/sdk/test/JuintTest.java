@@ -40,12 +40,13 @@ public class JuintTest {
 		final String tlPublicKey = "D:\\workspace\\sdk-junit-sample\\pfx\\云开放平台测试证书.cer";
 		*/
 		//电子账户测试环境
-		final String url = "http://test.allinpay.com/op/gateway";
-		final String appId = "1265270846692298753";
-		final String secretKey = "4Ue2o3YxIHfUZSgHMVR2FNpx76dR2g1F";
-		final String privateKeyPath = "C:\\workSpace\\eclipseWorkSpace\\sdk-junit-sample-new\\pfx\\1265270846692298753.pfx";
+		final String url = "https://test.allinpay.com/op/gateway";
+		final String appId = "1902271423530473681";
+		final String secretKey = "123456";
+
+		final String privateKeyPath = "D:\\项目\\通联\\eleaccountTOP_java_demo_20201010\\eleaccount_java_demo_TOP_20201010\\px3\\1902271423530473681.pfx";
 		final String pwd = "123456";
-		final String tlPublicKey = "C:\\workSpace\\eclipseWorkSpace\\sdk-junit-sample-new\\pfx\\云开放平台测试证书.cer";
+		final String tlPublicKey = "D:\\项目\\通联\\eleaccountTOP_java_demo_20201010\\eleaccount_java_demo_TOP_20201010\\px3\\1902271423530473681.cer";
 		
 		
 //		//生产环境
@@ -77,7 +78,7 @@ public class JuintTest {
 		oc.setVersion("2.0");
 		//电子账户专用结束
 		try {
-			client = new OpenClient(oc);
+			client = new  OpenClient(oc);
 		} catch (final Exception e) {
 			e.printStackTrace();
 		}

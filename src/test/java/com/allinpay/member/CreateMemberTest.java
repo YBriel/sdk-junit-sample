@@ -27,4 +27,9 @@ public class CreateMemberTest extends JuintTest{
 		}
 	}
 
+
+	public void test(){
+
+	}
+
 }
